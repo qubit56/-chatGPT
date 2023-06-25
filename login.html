@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- Include jQuery Mobile stylesheets -->
+  <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+</head>
+<body>
+
+<div data-role="page" id="pageone">
+  <div data-role="header">
+    <h1>회원 가입</h1>
+  </div>
+
+  <div data-role="main" class="ui-content">
+    <form id="signup-form">
+      <div class="ui-field-contain">
+        <label for="name">이름:</label>
+        <input type="text" name="name" id="name" required>
+
+        <label for="dob">생년월일:</label>
+        <input type="date" data-role="date" id="dob" required>
+
+        <label for="organization">소속:</label>
+        <input type="text" name="organization" id="organization" required>
+
+        <label for="join-date">가입일:</label>
+        <input type="date" id="join-date" disabled>
+      </div>
+
+      <input type="submit" data-inline="true" value="가입하기">
+    </form>
+  </div>
+</div>
+
+<!-- Include jQuery, jQuery Mobile, and jQuery UI -->
+<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+<script src="form.js"></script> <!-- 이곳에서 아래에 제시된 JavaScript 코드를 불러옵니다 -->
+
+</body>
+</html>
